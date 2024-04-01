@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "H H"
+    "A M"
+    "A F";
+  grid-template-columns: 250px auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  grid-area: H;
+}
+
+nav.menu {
+  background-color: black;
+  display: flex;
+}
+
+nav.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 12px;
+  font-size: 20px;
+}
+
+nav.menu a:hover {
+  color: black;
+  background-color: white;
+}
+
+aside {
+  grid-area: A;
+  background-color: rgb(233, 233, 233);
+  padding-left: 5px;
+}
+
+nav.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.aside a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+}
+
+nav.aside a:hover {
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  padding-left: 12px;
+}
+
+h1 {
+  color: green;
+  font-size: 35px;
+}
+main {
+  grid-area: M;
+  padding-left: 18px;
+}
+
+article {
+  display: flex;
+}
+
+div.left {
+  flex: 7;
+}
+
+div.right {
+  flex: 3;
+}
+
+div.right div {
+  text-align: center;
+  border: 1px solid black;
+  margin: 15px;
+}
+
+div.right div.little {
+  padding: 40px 70px;
+}
+
+div.right div.big {
+  padding: 60px 70px;
+}
+
+nav.fnav { 
+   
+    padding: 8px;
+    display: inline-block;  
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+nav.fnav a {
+    background-color: black;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav.fnav a:hover {
+    background-color: rgb(21, 78, 78);
+}
+
+footer {
+  grid-area: F;
+}
+
+p.f1 {
+    margin: 0;
+    padding: 32px 16px;
+    font-size: 20px;
+    background-color: grey;
+}
+
+p.f2 {
+    margin: 0;
+    padding: 16px;
+    font-size: 15px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+
+}
+
+
